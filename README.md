@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Flight Price Predictor
 
 A Machine Learning powered web application that predicts flight ticket prices based on various factors like airline, source, destination, and timing.
@@ -85,4 +85,4 @@ route, stops, and travel dates, using Python and popular data science libraries.
 ## Project Files
 - `Flight Ticket Price.ipynb` → Jupyter Notebook
 - `Data_Train.xlsx` → Dataset used in the notebook
->>>>>>> 4ebfc2055f248f17bd94aa885eeaebc99240b9ac
+
