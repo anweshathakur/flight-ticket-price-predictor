@@ -1,0 +1,9 @@
+# Flight Ticket Price Predictor Tasks
+
+- [ ] Analyze `Flight Ticket Price.ipynb` to understand the current implementation and identify bugs. <!-- id: 0 -->
+- [ ] Create a `implementation_plan.md` outlining the fixes and the web app architecture. <!-- id: 1 -->
+- [ ] Create a Python script (`train_model.py`) that replicates the notebook's logic but with fixes. <!-- id: 2 -->
+- [ ] Train the model using the fixed script and save the model (e.g., `model.pkl`). <!-- id: 3 -->
+- [ ] Create a web application (e.g., using Streamlit or Flask) with a clean white/grey/blue design. <!-- id: 4 -->
+- [ ] Connect the web app to the saved model for predictions. <!-- id: 5 -->
+- [ ] Verify the application functionality. <!-- id: 6 -->
