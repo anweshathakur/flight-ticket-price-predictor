@@ -1,88 +1,77 @@
-
 # Flight Price Predictor
 
-A Machine Learning powered web application that predicts flight ticket prices based on various factors like airline, source, destination, and timing.
+Ever wondered what your flight might cost before you even open MakeMyTrip? SkyFare is a machine learning powered web app that estimates Indian domestic flight prices based on your airline, route, stops, and time of travel — instantly, no searching required.
 
-##  Features
-- **Accurate Predictions**: Uses a Random Forest Regressor model trained on historical flight data.
-- **User-Friendly Interface**: Clean and modern web UI built with Flask, HTML, and CSS.
-- **Real-time Inputs**: Select Airline, Source, Destination, Stops, and Travel Time to get an instant price estimate.
+🌐 **Live Demo**: [flight-ticket-price-predictor.onrender.com](https://flight-ticket-price-predictor.onrender.com/)
+
+---
+
+## Features
+
+- **ML-Powered Predictions** — Uses a Random Forest Regressor trained on real historical flight data
+- **Smart Time Slots** — Choose from natural departure/arrival windows (Morning, Evening, Night etc.) instead of exact times
+- **Instant Results** — Get a fare estimate in seconds based on your inputs
+- **Clean UI** — Simple, friendly interface built with Flask, HTML, and CSS
+
+---
 
 ## Tech Stack
-- **Frontend**: HTML5, CSS3 (Custom Design)
-- **Backend**: Flask (Python)
-- **Machine Learning**: Scikit-Learn, Pandas, NumPy
-- **Model Storage**: Joblib
+
+| Layer | Technology |
+|---|---|
+| Frontend | HTML5, CSS3 |
+| Backend | Flask (Python) |
+| Machine Learning | Scikit-Learn, Pandas, NumPy |
+| Model Storage | Joblib |
+| Deployment | Render |
+
+---
 
 ## Project Structure
+
 ```
-├── app.py                  # Flask backend application
-├── train_model.py          # Script to train and save the ML model
-├── flight_price_model.pkl  # Trained model file
-├── requirements.txt        # List of dependencies
+├── app.py                    # Flask backend + prediction logic
+├── train_model.py            # Script to train and save the ML model
+├── flight_price_model.pkl    # Pre-trained Random Forest model
+├── requirements.txt          # Python dependencies
+├── Data_Train.xlsx           # Dataset used for training
 ├── static/
-│   └── style.css           # CSS styling for the website
-├── templates/
-│   └── index.html          # HTML frontend
-├── Data_Train.xlsx         # Dataset used for training
-└── README.md               # Project documentation
+│   └── style.css             # Frontend styling
+└── templates/
+    └── index.html            # Frontend UI
 ```
 
-##  How to Run This Project
+---
 
-Follow these steps to set up and run the project on your local machine.
+## Run Locally
 
 ### Prerequisites
-- Python 3.7 or higher installed.
+- Python 3.7 or higher
 
-### Step 1: Clone the Repository
-Open your terminal or command prompt and run:
-```bash
-git clone <repository-url>
-cd "flight ticket price predictor"
-```
-*(Replace `<repository-url>` with your actual GitHub repository link)*
+### Steps
 
-### Step 2: Install Dependencies
-Install all the required Python libraries using pip:
 ```bash
+# 1. Clone the repo
+git clone https://github.com/anweshathakur/flight-ticket-price-predictor.git
+cd flight-ticket-price-predictor
+
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
-### Step 3: Train the Model (Optional)
-The project comes with a pre-trained model (`flight_price_model.pkl`). If you want to retrain it yourself:
-```bash
-python train_model.py
-```
-*Alternatively, you can open and run `train_model_fixed.ipynb` in Jupyter Notebook.*
-
-### Step 4: Run the Application
-Start the Flask web server:
-```bash
+# 3. Run the app
 python app.py
 ```
 
-### Step 5: Access the Website
-Open your web browser and go to:
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
+Then open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
+
+> The pre-trained model (`flight_price_model.pkl`) is included so you don't need to retrain. If you'd like to retrain it yourself, run `python train_model.py` or open `train_model_fixed.ipynb` in Jupyter Notebook.
 
 ---
+
+## Dataset
+
+Training data is sourced from `Data_Train.xlsx` and includes Indian domestic flight records with features like airline, source, destination, stops, departure time, and ticket price.
+
+---
+
 *Created by Anwesha Thakur*
-=======
-# Flight Ticket Price Prediction
-
-A hands-on machine learning project to predict flight ticket prices based on airline,
-route, stops, and travel dates, using Python and popular data science libraries.
-
-## Tech Stack
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter Notebook
-- matplotlib
-
-## Project Files
-- `Flight Ticket Price.ipynb` → Jupyter Notebook
-- `Data_Train.xlsx` → Dataset used in the notebook
-
